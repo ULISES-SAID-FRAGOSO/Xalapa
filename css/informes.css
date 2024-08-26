@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+html::-webkit-scrollbar{
+    width: 7px;
+}
+
+html{
+    scrollbar-width: thin;
+    background-color: rgb(46, 234, 128);
+    background-color: linear-gradient(90deg, rgba(14,27,122,1) 8%, rgba(10,10,120,1) 39%, rgba(147,39,70,1) 100%);
+}
+
+
+:root{
+    --text-button-light: #f6f6f9;
+    --button: #1976D2;
+    --light-primary: #CFE8FF;
+    --grey: #eee;
+    --dark-grey: #AAAAAA;
+    --dark: #363949;
+    --danger: #D32F2F;
+	--light-danger: #FECDD3;
+    --warning: #FBC02D;
+    --light-warning: #FFF2C6;
+    --success: #388E3C;
+    --light-success: #BBF7D0;
+}
+
+body{
+    margin: auto;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-header>h1{
+    font-size: 20px;
+    position: absolute;
+    z-index: 2;
+    bottom: 650px;
+    left: 25px;
+    color: #ebcfff;
+}
+
+.top-header>img{
+    font-size: 20px;
+    height: 74px;
+    width: 100px;
+    object-fit: cover;
+    display: flex;
+    position: absolute;
+    left: 270px;
+    bottom: 630px;
+    z-index: 2;
+
+}
+
+.paginas{
+    background-color: var(--dark);
+    opacity: 1;
+    border-style: none;
+    margin: 25px, 25px;
+    padding: 25px;
+    inline-size: 1540px;
+    position: absolute;
+    bottom: 630px;
+    z-index: 0;
+}
+
+.enlances-paginas{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.button {
+    text-decoration: none;
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: var(--text-button-light);
+    background-color: var(--button);
+    border: none;
+    border-radius: 10px;
+    cursor:pointer
+}
+
+.encabezado{
+    position: absolute;
+    left: 100px;
+    top: 90px;
+    margin: auto;
+    text-align: center;
+        p{
+            font-size: 22px;
+            text-align: justify;
+            justify-content: center;
+            margin-left: 229px;
+            margin-right: 410px;
+        }
+}
+
+.container-carrusel{
+    border: var(--dark-grey) solid;
+    border-radius: 8px;
+    position: absolute;
+    left: 260px;
+    top: 269px;
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrado del contenedor */
+    overflow: hidden; /* Oculta el desbordamiento */
+}
+
+img{
+    max-width: 900px;
+    height: 535px;
+    object-fit: cover;
+}
+
+.custom-container{
+    position: absolute;
+    left: 860px;
+    top: 120px;
+    border: var(--dark) solid;
+    border-radius: 8px;
+    width: 380px;
+    height: 540px;
+    margin: auto;
+    margin-top: 150px;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+#formulario{
+    background-color: #486b8e;
+    color: var(--warning);
+    margin: 0;
+    margin-left: -25px;
+    margin-top: -15px;
+    padding: 0;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.apellidos{
+    margin-left: 54px;
+}
+
+.correo{
+    margin-top: 15px;
+}
+
+.mensajes{
+    margin-top: 15px;
+}
+
+
+#caja-nom{
+    width: 150px;
+}
+
+#caja-apell{
+    width: 150px;
+}
+
+#caja-contacto{
+    max-width: 192px;
+} 
+
+#caja-corr{
+    width:330px;
+}
+
+#caja-mensaje{
+    width: 330px;
+}

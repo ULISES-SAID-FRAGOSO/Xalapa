@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Fijo</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-container {
+            position: relative; /* Contenedor relativo */
+            width: 600px; /* Ancho completo */
+            height: 400px; /* Altura fija para el contenedor */
+            border: 1px solid #ccc; /* Borde para visualizar el contenedor */
+            padding: 20px; /* Espaciado interno */
+            overflow: hidden; /* Evita que el contenido se desborde */
+        }
+        .fixed-container {
+            position: absolute; /* Elementos fijos */
+            top: 0; /* Posición desde la parte superior */
+            left: 0; /* Posición desde la izquierda */
+            width: 400px; /* Ancho completo */
+            border: red solid;
+        }
+        .form-group {
+            position: absolute; /* Elementos fijos */
+        }
+        .nombres {
+            top: 20px; /* Ajusta la posición vertical */
+            left: 20px; /* Ajusta la posición horizontal */
+        }
+        .apellidos {
+            top: 20px; /* Ajusta la posición vertical */
+            left: 220px; /* Ajusta la posición horizontal */
+            margin-left:;
+        }
+        .contacto {
+            top: 80px; /* Ajusta la posición vertical */
+            left: 20px; /* Ajusta la posición horizontal */
+        }
+        .correo {
+            top: 140px; /* Ajusta la posición vertical */
+            left: 20px; /* Ajusta la posición horizontal */
+        }
+        .mensajes {
+            top: 200px; /* Ajusta la posición vertical */
+            left: 20px; /* Ajusta la posición horizontal */
+        }
+        .checkbox {
+            top: 280px; /* Ajusta la posición vertical */
+            left: 20px; /* Ajusta la posición horizontal */
+        }
+        .submit-button {
+            top: 320px; /* Ajusta la posición vertical */
+            left: 20px; /* Ajusta la posición horizontal */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="custom-container">
+        <div class="fixed-container">
+            <form class="needs-validation" novalidate>
+                <div class="form-group nombres">
+                    <label for="nombre" class="form-label">Nombres:</label>
+                    <input type="text" class="form-control" id="caja-nombre" placeholder="">
+                </div>
+                <div class="form-group apellidos">
+                    <label for="apellidos" class="form-label">Apellidos:</label>
+                    <input type="text" class="form-control" id="caja-apellidos">
+                </div>
+                <div class="form-group contacto">
+                    <label for="contacto" class="form-label">Contacto:</label>
+                    <div class="input-group">
+                        <select class="custom-select" id="codigo-pais">
+                            <option value="+1">EE.UU. (+1)</option>
+                            <option value="+52">México (+52)</option>
+                            <option value="+34">España (+34)</option>
+                            <option value="+54">Argentina (+54)</option>
+                            <option value="+57">Colombia (+57)</option>
+                        </select>
+                        <input type="tel" class="form-control" id="caja-contacto" placeholder="Ingresa tu número">
+                    </div>
+                </div>
+                <div class="form-group correo">
+                    <label for="correo" class="form-label">Correo de contacto:</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control">
+                        <div class="invalid-feedback">
+                            Please provide a valid email.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mensajes">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea class="form-control" placeholder="Dudas que tiene" rows="3"></textarea>
+                </div>
+                <div class="form-group checkbox">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group submit-button">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

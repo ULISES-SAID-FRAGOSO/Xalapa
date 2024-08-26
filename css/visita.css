@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+html::-webkit-scrollbar{
+    width: 7px;
+}
+
+html{
+    scrollbar-width: thin;
+    background-color: #BBF7D0;
+}
+
+
+:root{
+    --text-button-light: #f6f6f9;
+    --button: #1976D2;
+    --light-primary: #CFE8FF;
+    --grey: #eee;
+    --dark-grey: #AAAAAA;
+    --dark: #363949;
+    --danger: #D32F2F;
+	--light-danger: #FECDD3;
+    --warning: #FBC02D;
+    --light-warning: #FFF2C6;
+    --success: #388E3C;
+    --light-success: #BBF7D0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(24,90,108);
+    background: radial-gradient(circle, rgba(24,90,108,1) 61%, rgba(2,0,36,1) 100%, rgba(0,212,255,1) 100%); 
+}
+
+.top-header>h1{
+    font-size: 20px;
+    position: absolute;
+    z-index: 2;
+    bottom: 640px;
+    left: 25px;
+    color: #CFE8FF;
+}
+
+.top-header>img{
+    font-size: 20px;
+    height: 74px;
+    width: 100px;
+    object-fit: cover;
+    display: flex;
+    position: absolute;
+    left: 270px;
+    bottom: 620px;
+    z-index: 2;
+
+}
+
+.paginas{
+    background-color: var(--dark);
+    opacity: 1;
+    border-style: none;
+    margin: 25px, 25px;
+    padding: 25px;
+    inline-size: 1530px;
+    position: absolute;
+    bottom: 620px;
+    z-index: 0;
+}
+
+.enlances-paginas{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.button {
+    text-decoration: none;
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: var(--text-button-light);
+    background-color: var(--button);
+    border: none;
+    border-radius: 10px;
+    cursor:pointer
+}
+
+
+#imagen-catedral, #imagen-museo{
+    width: 500px;
+    height: 260px;
+}
+
+#imagen-parque{
+    width: 319px;
+    height: 330px;
+}
+
+h5{
+    text-align: center;
+    font-family: cursive;
+}
+
+.container{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        h2{
+            position: absolute;
+            left: 480px;
+        }
+        p{
+            position: absolute;
+            top: 40px;
+            font-size: 23px;
+            left: 150px;
+            right: 90px;
+            text-align: center;
+        }
+}
+
+.container-fluid{
+    position: absolute;
+    top: 200px;
+}
+
